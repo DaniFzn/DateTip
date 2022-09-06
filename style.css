@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(241, 111, 133), rgb(139, 96, 104));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.title{
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    gap: 20px;
+}
+
+.buttons input{
+    width: 100px;
+    border: solid rgba(158, 2, 2, 0.637) 1px;
+    border-radius: 10px;
+    padding: 4px;
+    cursor: pointer;
+    background: rgb(247, 81, 81);
+}
+
+.buttons input:hover{
+    background: rgba(170, 2, 2, 0.623);
+}
+
+.btnYStyle{
+    display: none;
+}
