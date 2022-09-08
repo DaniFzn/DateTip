@@ -3,6 +3,8 @@ let btnY = document.querySelector("#btn-yes")
 let btnNStyle = document.querySelector(".btnNStyle")
 let btnYStyle = document.querySelector(".btnYStyle")
 let buttons = document.querySelector(".buttons")
+let title = document.querySelector(".title")
+let surp = document.querySelector(".hidden")
 
 btnN.addEventListener("click", showBtnY);
 
@@ -35,4 +37,6 @@ btnY.addEventListener("click", accept);
 
 function accept() {
     buttons.style.display = "none"
+    title.style.display = "none"
+    surp.style.display = "block"
 }

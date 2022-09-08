@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "love";
+    src: url("ValentineMoment.ttf") format("truetype");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +26,7 @@ body{
     justify-content: center;
     position: relative;
     top: 200px;
-    gap: 20px;
+    gap: 60px;
 }
 
 .buttons input{
@@ -39,4 +44,85 @@ body{
 
 .btnYStyle{
     display: none;
+}
+
+.hidden{
+    display: none;
+    position: absolute;
+    left: 230px;
+    top: 56px;
+}
+
+.hidden h1{
+    font-family: "love";
+    font-size: 80px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    position: relative;
+    left: 120px;
+    color: rgba(247, 6, 207, 0.705);
+}
+
+.cloud{
+    position: absolute;
+}
+
+#cd1{
+    position: relative;
+    left: 100px;
+    height: 100px;
+    width: 300px;
+    animation: moves 6.5s infinite linear;
+}
+
+#cd2{
+    position: relative;
+    top: 340px;
+    right: 300px;
+    height: 150px;
+    width: 350px;
+    animation: moves2 8s infinite linear;
+}
+
+#cd3{
+    position: relative;
+    top: 100px;
+    height: 150px;
+    width: 350px;
+    animation: movesOtherSide 9s infinite linear;
+    
+}
+
+#cd4{
+    position: relative;
+    top: 500px;
+    height: 125px;
+    width: 325px;
+    animation: movesOtherSide2 7.5s infinite linear;
+}
+
+@keyframes moves{
+    0% {left: 0;}
+    50%{left: 80px;}
+    100%{left: 0}
+    
+}
+
+@keyframes moves2{
+    0% {left: 0;}
+    50%{left: 50px;}
+    100%{left: 0}
+    
+}
+
+@keyframes movesOtherSide {
+    0% {right: 0px;}
+    50%{right: 90px;}
+    100%{right: 0}
+}
+
+@keyframes movesOtherSide2 {
+    0% {right: 0px;}
+    50%{right: 70px;}
+    100%{right: 0}
 }
